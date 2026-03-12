@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>목성</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="우리 가족 노트"/><meta property="og:title" content="목성"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="목성"/><meta name="twitter:description" content="목성 핵심 아이디어 (한 문장으로 이해하기) 목성은 태양계에서 제일 큰 행성으로, 땅이 없는 거대한 가스 구름 덩어리예요! 300년 넘게 계속되는 빨간 폭풍(대적점)이 있고, 95개나 되는 위성(달)을 거느린 “행성들의 왕”이랍니다."/><meta property="og:description" content="목성 핵심 아이디어 (한 문장으로 이해하기) 목성은 태양계에서 제일 큰 행성으로, 땅이 없는 거대한 가스 구름 덩어리예요! 300년 넘게 계속되는 빨간 폭풍(대적점)이 있고, 95개나 되는 위성(달)을 거느린 “행성들의 왕”이랍니다."/><meta property="og:image:alt" content="목성 핵심 아이디어 (한 문장으로 이해하기) 목성은 태양계에서 제일 큰 행성으로, 땅이 없는 거대한 가스 구름 덩어리예요! 300년 넘게 계속되는 빨간 폭풍(대적점)이 있고, 95개나 되는 위성(달)을 거느린 “행성들의 왕”이랍니다."/><meta property="twitter:domain" content="kingjin22.github.io/family-notes"/><meta property="og:url" content="https://kingjin22.github.io/family-notes/첫째딸-질문노트/우주와-과학/목성"/><meta property="twitter:url" content="https://kingjin22.github.io/family-notes/첫째딸-질문노트/우주와-과학/목성"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="목성 핵심 아이디어 (한 문장으로 이해하기) 목성은 태양계에서 제일 큰 행성으로, 땅이 없는 거대한 가스 구름 덩어리예요! 300년 넘게 계속되는 빨간 폭풍(대적점)이 있고, 95개나 되는 위성(달)을 거느린 “행성들의 왕”이랍니다."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL3N1bmdqaW5jaG9pL2ZhbWlseS1xdWFydHovcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kingjin22.github.io/family-notes/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://kingjin22.github.io/family-notes/첫째딸-질문노트/우주와-과학/목성-og-image.webp"/><meta property="og:image:url" content="https://kingjin22.github.io/family-notes/첫째딸-질문노트/우주와-과학/목성-og-image.webp"/><meta name="twitter:image" content="https://kingjin22.github.io/family-notes/첫째딸-질문노트/우주와-과학/목성-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="첫째딸-질문노트/우주와-과학/목성"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">우리 가족 노트</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-51"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-51" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../첫째딸-질문노트/">첫째딸 질문노트</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../첫째딸-질문노트/우주와-과학/">우주와 과학</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>목성</a></div></nav><h1 class="article-title">목성</h1><p show-comma="true" class="content-meta"><time datetime="2026-03-08T13:31:45.000Z">2026년 3월 08일</time><span>24 min read</span></p><ul class="tags"><li><a href="../../tags/과학" class="internal tag-link">과학</a></li><li><a href="../../tags/목성" class="internal tag-link">목성</a></li><li><a href="../../tags/행성" class="internal tag-link">행성</a></li><li><a href="../../tags/태양계" class="internal tag-link">태양계</a></li><li><a href="../../tags/첫째딸질문" class="internal tag-link">첫째딸질문</a></li><li><a href="../../tags/가스행성" class="internal tag-link">가스행성</a></li></ul></div></div><article class="popover-hint"><h1 id="목성">목성<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#목성" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="핵심-아이디어-한-문장으로-이해하기">핵심 아이디어 (한 문장으로 이해하기)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#핵심-아이디어-한-문장으로-이해하기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>목성은 태양계에서 <strong>제일 큰 행성</strong>으로, 땅이 없는 거대한 가스 구름 덩어리예요! 300년 넘게 계속되는 빨간 폭풍(대적점)이 있고, 95개나 되는 위성(달)을 거느린 “행성들의 왕”이랍니다. 👑🪐</p>
+<h2 id="자세히-알아보기">자세히 알아보기<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#자세히-알아보기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="목성은-어떤-행성이에요">목성은 어떤 행성이에요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#목성은-어떤-행성이에요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>목성의 기본 정보</strong>:</p>
+<ul>
+<li>이름: 목성 (Jupiter) 🪐</li>
+<li>별명: “행성들의 왕” (King of Planets)</li>
+<li>태양계에서의 위치: <strong>5번째</strong> 행성</li>
+<li>크기: 태양계에서 <strong>제일 큰</strong> 행성!</li>
+<li>특별한 점: 가스로 만들어져서 <strong>착륙할 수 없어요</strong></li>
+</ul>
+<p><strong>목성을 특별하게 만드는 것들</strong>:</p>
+<ul>
+<li>✅ 태양계에서 <strong>제일 큰</strong> 행성</li>
+<li>✅ 지구를 <strong>1,300개</strong>나 넣을 수 있어요</li>
+<li>✅ <strong>95개</strong>의 위성(달)이 있어요</li>
+<li>✅ <strong>300년</strong> 넘게 계속되는 거대한 폭풍이 있어요</li>
+<li>✅ <strong>10시간</strong>만에 한 바퀴 도는 빠른 행성</li>
+<li>✅ 희미한 <strong>고리</strong>도 있어요</li>
+</ul>
+<h3 id="얼마나-클까요">얼마나 클까요?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#얼마나-클까요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>엄청나게 커요!</strong>:</p>
+<ul>
+<li>태양계 행성 중 <strong>1등</strong> 🏆</li>
+<li>지구의 <strong>11배</strong> 크기예요</li>
+<li>지구를 <strong>1,300개</strong> 넣을 수 있어요!</li>
+<li>마치 수박 옆에 포도알 같아요</li>
+</ul>
+<p><strong>쉬운 비유</strong>:</p>
+<ul>
+<li>목성이 축구공이라면</li>
+<li>지구는 구슬만 해요</li>
+<li>정말정말 크죠?</li>
+<li>다른 행성들도 다 합쳐도 목성보다 작아요!</li>
+</ul>
+<p><strong>지구와 비교하면</strong>:</p>
+<ul>
+<li>지름: 지구의 11배</li>
+<li>무게: 지구의 318배 (정말 무거워요!)</li>
+<li>부피: 지구 1,300개를 넣을 수 있어요</li>
+<li>하루: <strong>10시간</strong> (엄청 빨라요!)</li>
+<li>1년: 12년 (지구 시간으로)</li>
+</ul>
+<h3 id="땅이-없는-행성이에요">땅이 없는 행성이에요!<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#땅이-없는-행성이에요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>가스로 만들어졌어요</strong>:</p>
+<ul>
+<li>대부분 수소와 헬륨이에요 ☁️</li>
+<li>마치 거대한 구름 덩어리예요</li>
+<li>땅이 없어서 <strong>착륙할 수 없어요</strong></li>
+<li>빠져들어가면 점점 깊어져요</li>
+</ul>
+<p><strong>착륙할 수 없는 이유</strong>:</p>
+<ul>
+<li>딱딱한 땅이 없어요</li>
+<li>발을 디딜 곳이 없어요</li>
+<li>가스 구름 속으로 계속 떨어져요</li>
+<li>중심에는 작은 단단한 핵이 있을 수도 있어요</li>
+</ul>
+<p><strong>무엇으로 만들어졌나요?</strong></p>
+<ul>
+<li>수소: 90% (풍선을 띄우는 가스랑 같아요)</li>
+<li>헬륨: 10% (우주에서 두 번째로 가벼운 가스)</li>
+<li>아주 조금의 다른 가스들</li>
+<li>마치 거대한 가스 풍선이에요!</li>
+</ul>
+<h3 id="큰-빨간-점---거대한-폭풍">큰 빨간 점 - 거대한 폭풍!<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#큰-빨간-점---거대한-폭풍" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>300년 넘게 계속되는 폭풍이에요</strong>:</p>
+<ul>
+<li>정식 이름: “대적점” (Great Red Spot) 🌀</li>
+<li>빨간색 타원 모양이에요</li>
+<li><strong>300년 이상</strong> 계속되고 있어요</li>
+<li>지구 <strong>2~3개</strong>가 들어갈 크기예요!</li>
+</ul>
+<p><strong>왜 생겼을까요?</strong></p>
+<ul>
+<li>엄청 큰 태풍이에요</li>
+<li>시속 640km로 회전해요</li>
+<li>한 번 생기면 오래오래 계속돼요</li>
+<li>멈추게 할 땅이 없어서 계속 돌아요</li>
+</ul>
+<p><strong>왜 빨간색일까요?</strong></p>
+<ul>
+<li>정확히는 아직 모르지만</li>
+<li>화학물질이 햇빛을 받아서</li>
+<li>빨갛게 보이는 것 같아요</li>
+<li>점점 작아지고 있어요!</li>
+</ul>
+<p><strong>쉬운 비유</strong>:</p>
+<ul>
+<li>욕조에서 물 빼면 빙빙 도는 거 봤죠?</li>
+<li>그게 엄청나게 커진 거예요</li>
+<li>300년 동안 계속 빙빙 돌고 있어요</li>
+<li>지구가 2개 들어갈 만큼 커요!</li>
+</ul>
+<h3 id="빠르게-빙빙-돌아요">빠르게 빙빙 돌아요!<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#빠르게-빙빙-돌아요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>하루가 10시간이에요</strong>:</p>
+<ul>
+<li>목성은 엄청 빨리 회전해요 ⚡</li>
+<li><strong>10시간</strong>만에 한 바퀴 돌아요</li>
+<li>지구보다 2배 이상 빨라요!</li>
+<li>태양계에서 제일 빠른 회전이에요</li>
+</ul>
+<p><strong>빨리 돌면 어떻게 될까요?</strong></p>
+<ul>
+<li>적도 부분이 볼록해져요</li>
+<li>마치 회전하는 피자 도우처럼</li>
+<li>기둥 모양이 아니라 납작해져요</li>
+<li>구가 아니라 타원 모양이에요!</li>
+</ul>
+<p><strong>날씨가 엄청 빠르게 변해요</strong>:</p>
+<ul>
+<li>하루가 짧으니까 날씨도 빨라요</li>
+<li>구름이 빠르게 움직여요</li>
+<li>폭풍도 빠르게 회전해요</li>
+<li>줄무늬 구름이 보여요!</li>
+</ul>
+<h3 id="아름다운-줄무늬가-있어요">아름다운 줄무늬가 있어요<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#아름다운-줄무늬가-있어요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>줄무늬 행성이에요</strong>:</p>
+<ul>
+<li>갈색, 흰색, 빨간색 줄무늬 🎨</li>
+<li>구름 띠예요</li>
+<li>옆으로 길게 뻗어있어요</li>
+<li>정말 아름다워요!</li>
+</ul>
+<p><strong>왜 줄무늬가 생겼나요?</strong></p>
+<ul>
+<li>빠르게 회전해서</li>
+<li>구름이 띠 모양으로 늘어났어요</li>
+<li>따뜻한 가스와 차가운 가스가 섞여요</li>
+<li>다른 높이에 있는 구름이에요</li>
+</ul>
+<p><strong>줄무늬 색깔</strong>:</p>
+<ul>
+<li>밝은 띠: 올라가는 가스 (따뜻해요)</li>
+<li>어두운 띠: 내려가는 가스 (차가워요)</li>
+<li>화학물질이 햇빛을 받아요</li>
+<li>여러 색깔이 나타나요</li>
+</ul>
+<h3 id="위성이-95개나-있어요">위성이 95개나 있어요!<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#위성이-95개나-있어요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>달이 엄청 많아요</strong>:</p>
+<ul>
+<li>2026년 현재 <strong>95개</strong> 발견! 🌙</li>
+<li>계속 새로운 게 발견돼요</li>
+<li>작은 것부터 큰 것까지</li>
+<li>마치 태양계를 축소해놓은 것 같아요!</li>
+</ul>
+<p><strong>제일 큰 4개의 위성</strong>:</p>
+<ul>
+<li>이오 (Io): 화산이 폭발하는 위성 🌋</li>
+<li>유로파 (Europa): 얼음 밑에 바다가 있어요 🧊</li>
+<li>가니메데 (Ganymede): 태양계에서 제일 큰 위성</li>
+<li>칼리스토 (Callisto): 크레이터가 많아요</li>
+</ul>
+<p><strong>왜 이렇게 많을까요?</strong></p>
+<ul>
+<li>목성이 엄청 크고 무거워요</li>
+<li>중력이 아주 강해요</li>
+<li>주변을 지나가는 것들을 붙잡아요</li>
+<li>마치 왕처럼 많은 부하를 거느려요!</li>
+</ul>
+<h3 id="유로파---생명체가-있을지도">유로파 - 생명체가 있을지도!<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#유로파---생명체가-있을지도" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>목성의 특별한 위성</strong>:</p>
+<ul>
+<li>얼음으로 덮여있어요 ❄️</li>
+<li>얼음 밑에 <strong>바다</strong>가 있어요</li>
+<li>지구 바다보다 물이 더 많아요!</li>
+<li>생명체가 살 수도 있어요</li>
+</ul>
+<p><strong>왜 중요할까요?</strong></p>
+<ul>
+<li>물이 있으면 생명체가 살 수 있어요</li>
+<li>따뜻한 물이 있을 수도 있어요</li>
+<li>목성의 중력이 유로파를 데워줘요</li>
+<li>과학자들이 탐사선을 보낼 거예요!</li>
+</ul>
+<p><strong>쉬운 비유</strong>:</p>
+<ul>
+<li>겨울에 언 호수처럼</li>
+<li>위는 얼음이지만</li>
+<li>밑에는 물이 있어요</li>
+<li>물고기처럼 생명체가 살 수도 있어요!</li>
+</ul>
+<h3 id="이오---화산이-폭발하는-위성">이오 - 화산이 폭발하는 위성<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이오---화산이-폭발하는-위성" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>태양계에서 제일 활발한 화산</strong>:</p>
+<ul>
+<li>400개 넘는 화산이 있어요 🌋</li>
+<li>계속 폭발하고 있어요</li>
+<li>용암이 분출해요</li>
+<li>노란색과 주황색으로 보여요</li>
+</ul>
+<p><strong>왜 화산이 많을까요?</strong></p>
+<ul>
+<li>목성의 중력이 이오를 잡아당겨요</li>
+<li>마치 찰흙을 주물럭거리는 것처럼</li>
+<li>안이 뜨거워져요</li>
+<li>그래서 화산이 터져요!</li>
+</ul>
+<p><strong>신기한 점</strong>:</p>
+<ul>
+<li>용암이 우주로 200km 솟아올라요!</li>
+<li>표면 색깔이 피자처럼 생겼어요</li>
+<li>계속 변하고 있어요</li>
+<li>우주선이 사진을 찍었어요</li>
+</ul>
+<h3 id="가니메데---제일-큰-위성">가니메데 - 제일 큰 위성<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#가니메데---제일-큰-위성" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>태양계 최대 위성이에요</strong>:</p>
+<ul>
+<li>수성보다 커요! 🌕</li>
+<li>태양계에서 제일 큰 위성</li>
+<li>얼음과 돌로 만들어졌어요</li>
+<li>자기장도 있어요</li>
+</ul>
+<p><strong>특별한 점</strong>:</p>
+<ul>
+<li>위성 중에 유일하게 자기장이 있어요</li>
+<li>얼음 밑에 바다가 있을 수도 있어요</li>
+<li>지구 달보다 훨씬 커요</li>
+<li>하지만 행성은 아니에요 (위성이에요)</li>
+</ul>
+<h3 id="목성도-고리가-있어요">목성도 고리가 있어요!<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#목성도-고리가-있어요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>희미한 고리</strong>:</p>
+<ul>
+<li>토성처럼 고리가 있어요! 💍</li>
+<li>하지만 아주 희미해요</li>
+<li>먼지로 만들어졌어요</li>
+<li>잘 안 보여요</li>
+</ul>
+<p><strong>왜 잘 안 보일까요?</strong></p>
+<ul>
+<li>토성 고리보다 훨씬 얇아요</li>
+<li>먼지 알갱이가 작아요</li>
+<li>빛을 잘 반사 안 해요</li>
+<li>특별한 망원경으로만 보여요</li>
+</ul>
+<p><strong>고리는 어디서 왔나요?</strong></p>
+<ul>
+<li>작은 위성들이 부딪혔어요</li>
+<li>운석이 위성에 부딪혔어요</li>
+<li>먼지가 흩어졌어요</li>
+<li>그게 고리가 됐어요</li>
+</ul>
+<h3 id="목성의-날씨">목성의 날씨<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#목성의-날씨" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>엄청난 폭풍들</strong>:</p>
+<ul>
+<li>대적점 말고도 폭풍이 많아요</li>
+<li>번개가 쳐요 ⚡</li>
+<li>지구보다 훨씬 강해요</li>
+<li>계속 새로운 폭풍이 생겨요</li>
+</ul>
+<p><strong>번개가 엄청나요</strong>:</p>
+<ul>
+<li>지구 번개보다 1,000배 강해요!</li>
+<li>번쩍번쩍 빛나요</li>
+<li>우주선이 사진을 찍었어요</li>
+<li>정말 무서워 보여요</li>
+</ul>
+<p><strong>오로라도 있어요</strong>:</p>
+<ul>
+<li>북극과 남극에서 빛나요 🌌</li>
+<li>지구 오로라보다 훨씬 밝아요</li>
+<li>강한 자기장 때문이에요</li>
+<li>정말 아름다워요!</li>
+</ul>
+<h3 id="목성의-중력">목성의 중력<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#목성의-중력" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>중력이 엄청 강해요</strong>:</p>
+<ul>
+<li>지구의 2.5배예요</li>
+<li>목성에 서면 2.5배 무거워져요</li>
+<li>30kg 아이는 75kg이 돼요</li>
+<li>걷기가 정말 힘들 거예요!</li>
+</ul>
+<p><strong>목성이 지구를 지켜줘요</strong>:</p>
+<ul>
+<li>강한 중력으로 소행성을 끌어당겨요</li>
+<li>지구로 올 수도 있던 것들을 막아줘요</li>
+<li>마치 태양계의 청소기예요</li>
+<li>마치 큰 형처럼 동생을 지켜줘요!</li>
+</ul>
+<p><strong>1994년 슈메이커-레비 혜성</strong>:</p>
+<ul>
+<li>혜성이 목성에 부딪혔어요 ☄️</li>
+<li>21개 조각으로 나뉘어서</li>
+<li>하나씩 부딪혔어요</li>
+<li>지구만한 폭발 자국이 생겼어요!</li>
+</ul>
+<h3 id="목성-탐사하기">목성 탐사하기<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#목성-탐사하기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>우주선들이 다녀갔어요</strong>:</p>
+<ul>
+<li>파이어니어 10, 11호 (1973-74년) - 처음 방문!</li>
+<li>보이저 1, 2호 (1979년) - 자세한 사진</li>
+<li>갈릴레오 (1995-2003년) - 오랫동안 관찰</li>
+<li>주노 (2016년~지금) - 지금도 관찰 중! 🛰️</li>
+</ul>
+<p><strong>주노가 발견한 것들</strong>:</p>
+<ul>
+<li>북극에 거대한 폭풍들이 모여있어요</li>
+<li>육각형 모양으로 배치돼 있어요</li>
+<li>내부 구조를 연구했어요</li>
+<li>멋진 사진을 많이 보냈어요</li>
+</ul>
+<p><strong>갈릴레오의 탐사</strong>:</p>
+<ul>
+<li>작은 탐사선을 목성에 떨어뜨렸어요</li>
+<li>대기 속으로 들어갔어요</li>
+<li>58분 동안 데이터를 보냈어요</li>
+<li>그 후 압력에 눌려 부서졌어요</li>
+</ul>
+<h3 id="목성과-태양">목성과 태양<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#목성과-태양" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>작은 태양?</strong></p>
+<ul>
+<li>목성은 거의 별이 될 뻔했어요 ⭐</li>
+<li>태양처럼 수소로 만들어졌어요</li>
+<li>하지만 질량이 부족했어요</li>
+<li>80배 더 무거웠다면 별이 됐을 거예요!</li>
+</ul>
+<p><strong>열을 내뿜어요</strong>:</p>
+<ul>
+<li>받는 것보다 더 많은 열을 내요</li>
+<li>안에서 열이 만들어져요</li>
+<li>천천히 수축하면서 열을 내요</li>
+<li>마치 뜨거운 감자처럼</li>
+</ul>
+<h3 id="지구에서-목성-보기">지구에서 목성 보기<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#지구에서-목성-보기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>쉽게 볼 수 있어요</strong>:</p>
+<ul>
+<li>밤하늘에서 아주 밝아요 ✨</li>
+<li>반짝이지 않고 환하게 빛나요</li>
+<li>별들은 깜빡이지만 목성은 안 깜빡여요</li>
+<li>쌍안경으로 4개의 큰 위성도 보여요!</li>
+</ul>
+<p><strong>언제 잘 보일까요?</strong></p>
+<ul>
+<li>1년 내내 볼 수 있어요</li>
+<li>12개월마다 한 번씩 가장 밝아져요</li>
+<li>별자리를 따라 움직여요</li>
+<li>앱으로 위치를 확인할 수 있어요</li>
+</ul>
+<p><strong>망원경으로 보면</strong>:</p>
+<ul>
+<li>줄무늬가 보여요</li>
+<li>대적점이 보일 수도 있어요</li>
+<li>4개의 큰 위성이 보여요</li>
+<li>위성들이 매일 위치가 바뀌어요!</li>
+</ul>
+<h3 id="목성의-역사">목성의 역사<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#목성의-역사" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>400년 전 갈릴레오</strong>:</p>
+<ul>
+<li>갈릴레오가 망원경으로 처음 봤어요 🔭</li>
+<li>4개의 큰 위성을 발견했어요</li>
+<li>그래서 “갈릴레오 위성”이라고 불러요</li>
+<li>중요한 발견이었어요!</li>
+</ul>
+<p><strong>그 전에는</strong>:</p>
+<ul>
+<li>고대 사람들도 알고 있었어요</li>
+<li>밝은 별이라고 생각했어요</li>
+<li>신의 이름을 붙였어요</li>
+<li>로마 신 주피터의 이름이에요</li>
+</ul>
+<h2 id="근거--출처">근거 / 출처<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#근거--출처" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../../첫째딸-질문노트/우주와-과학/태양계란" class="internal alias" data-slug="첫째딸-질문노트/우주와-과학/태양계란">태양계란</a> — 목성은 태양계의 5번째이자 가장 큰 행성</li>
+<li><a href="../../첫째딸-질문노트/우주와-과학/유로파의-지하-바다" class="internal alias" data-slug="첫째딸-질문노트/우주와-과학/유로파의-지하-바다">유로파의 지하 바다</a> — 목성의 위성 유로파에 바다가 있을 가능성</li>
+<li><a href="../../첫째딸-질문노트/우주와-과학/토성" class="internal alias" data-slug="첫째딸-질문노트/우주와-과학/토성">토성</a> — 목성처럼 고리와 많은 위성을 가진 가스 행성</li>
+<li><a href="../../첫째딸-질문노트/우주와-과학/생명체가-살기-위한-조건" class="internal alias" data-slug="첫째딸-질문노트/우주와-과학/생명체가-살기-위한-조건">생명체가 살기 위한 조건</a> — 유로파에 생명체가 있을 가능성</li>
+</ul>
+<h2 id="-연결-노트">🔗 연결 노트<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-연결-노트" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../../첫째딸-질문노트/우주와-과학/태양계란" class="internal alias" data-slug="첫째딸-질문노트/우주와-과학/태양계란">태양계란</a> — 목성은 태양계에서 가장 큰 행성</li>
+<li><a href="../../첫째딸-질문노트/우주와-과학/유로파의-지하-바다" class="internal alias" data-slug="첫째딸-질문노트/우주와-과학/유로파의-지하-바다">유로파의 지하 바다</a> — 목성의 위성 유로파는 생명체 가능성이 있음</li>
+<li><a href="../../첫째딸-질문노트/우주와-과학/토성" class="internal alias" data-slug="첫째딸-질문노트/우주와-과학/토성">토성</a> — 목성과 비슷한 가스 행성, 고리가 더 아름다움</li>
+<li><a href="../../첫째딸-질문노트/우주와-과학/생명체가-살기-위한-조건" class="internal alias" data-slug="첫째딸-질문노트/우주와-과학/생명체가-살기-위한-조건">생명체가 살기 위한 조건</a> — 유로파의 지하 바다에 생명체 가능성</li>
+<li><a href="../../첫째딸-질문노트/우주와-과학/지구" class="internal alias" data-slug="첫째딸-질문노트/우주와-과학/지구">지구</a> — 목성의 중력이 지구를 지켜줌</li>
+<li><a href="../../첫째딸-질문노트/우주와-과학/🗺️-우주와-과학-MOC" class="internal alias" data-slug="첫째딸-질문노트/우주와-과학/🗺️-우주와-과학-MOC">🗺️ 우주와 과학 MOC</a> — 첫째딸 질문 전체 지도</li>
+</ul>
+<h2 id="-엄마아빠가-설명해줄-때-도움말">💡 엄마아빠가 설명해줄 때 도움말<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-엄마아빠가-설명해줄-때-도움말" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="이렇게-비유해보세요">이렇게 비유해보세요<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이렇게-비유해보세요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>크기 비교</strong> (메인):</p>
+<ul>
+<li>“목성이 축구공이라면”</li>
+<li>“지구는 구슬만 해”</li>
+<li>“목성 안에 지구를 1,300개나 넣을 수 있어!”</li>
+<li>“정말정말 큰 행성이지?”</li>
+</ul>
+<p><strong>가스 행성 설명</strong>:</p>
+<ul>
+<li>“구름이 엄청나게 모여있는 거야”</li>
+<li>“솜사탕처럼 푹신해 보이지만”</li>
+<li>“착륙하려고 하면 계속 빠져들어가”</li>
+<li>“발을 디딜 땅이 없어!”</li>
+</ul>
+<p><strong>대적점 설명</strong>:</p>
+<ul>
+<li>“욕조 물 빼면 빙빙 도는 거 봤지?”</li>
+<li>“그게 엄청나게 커진 거야”</li>
+<li>“300년 동안 계속 빙빙 돌고 있어”</li>
+<li>“지구가 2개 들어갈 만큼 커!”</li>
+</ul>
+<p><strong>회전 속도</strong>:</p>
+<ul>
+<li>“목성은 엄청 빨리 돌아”</li>
+<li>“하루가 10시간밖에 안 돼”</li>
+<li>“학교 갔다 오면 하루가 끝나는 거야!”</li>
+<li>“너무 빨라서 옆으로 납작해졌어”</li>
+</ul>
+<h3 id="함께-놀이하기">함께 놀이하기<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#함께-놀이하기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>회전 실험하기</strong>:</p>
+<ul>
+<li>피자 도우 돌리는 영상 보기</li>
+<li>빨리 돌리면 옆으로 퍼지는 것 관찰</li>
+<li>목성도 빨리 돌아서 납작하다고 설명</li>
+<li>풍선에 줄무늬 그려보기</li>
+</ul>
+<p><strong>크기 비교 놀이</strong>:</p>
+<ul>
+<li>축구공(목성)과 구슬(지구) 준비</li>
+<li>크기 차이 느껴보기</li>
+<li>축구공에 구슬 1,300개를 넣을 수 있다고 상상</li>
+<li>다른 행성들도 비교해보기</li>
+</ul>
+<p><strong>위성 놀이</strong>:</p>
+<ul>
+<li>큰 공(목성) 주위를 돌기</li>
+<li>친구들과 함께 95개 위성 흉내내기</li>
+<li>누가 제일 빨리 도는지</li>
+<li>누가 제일 크고 작은지 역할 정하기</li>
+</ul>
+<p><strong>줄무늬 그리기</strong>:</p>
+<ul>
+<li>둥근 풍선 준비</li>
+<li>갈색, 흰색으로 줄무늬 그리기</li>
+<li>대적점도 빨간색으로 그리기</li>
+<li>목성 모형 만들기!</li>
+</ul>
+<p><strong>망원경 관찰</strong>:</p>
+<ul>
+<li>밤에 목성 찾아보기</li>
+<li>쌍안경으로 위성 보기</li>
+<li>매일 위성 위치가 바뀌는 것 관찰</li>
+<li>관찰 일지 쓰기</li>
+</ul>
+<h3 id="신기한-사실들">신기한 사실들<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#신기한-사실들" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>🌀 <strong>대적점이 점점 작아지고 있어요</strong></p>
+<ul>
+<li>100년 전보다 절반이 됐어요</li>
+<li>왜 그런지는 아직 몰라요</li>
+<li>언젠가 사라질 수도 있어요</li>
+<li>하지만 아직 수십 년은 남았어요!</li>
+</ul>
+<p>🌋 <strong>이오의 화산은 우주에서도 보여요</strong></p>
+<ul>
+<li>용암이 200km나 솟아올라요!</li>
+<li>지구 화산보다 훨씬 높아요</li>
+<li>우주에서 봐도 폭발하는 게 보여요</li>
+<li>태양계에서 제일 활발한 곳이에요</li>
+</ul>
+<p>🌊 <strong>유로파의 바다는 엄청 깊어요</strong></p>
+<ul>
+<li>얼음 두께: 15~25km</li>
+<li>바다 깊이: 100km 이상!</li>
+<li>지구의 모든 바다보다 물이 더 많아요</li>
+<li>그 안에 생명체가 있을지도!</li>
+</ul>
+<p>⚡ <strong>번개가 지구보다 1,000배 강해요</strong></p>
+<ul>
+<li>엄청나게 밝아요</li>
+<li>우주에서도 보여요</li>
+<li>계속 번쩍번쩍 쳐요</li>
+<li>정말 무서워 보여요!</li>
+</ul>
+<p>🛡️ <strong>목성이 지구를 지켜줘요</strong></p>
+<ul>
+<li>강한 중력으로 소행성을 끌어당겨요</li>
+<li>지구로 올 뻔한 것들을 막아줘요</li>
+<li>마치 태양계의 방패예요</li>
+<li>큰 형이 동생 지켜주는 것처럼!</li>
+</ul>
+<p>🎨 <strong>북극 폭풍이 육각형이에요</strong></p>
+<ul>
+<li>8개의 큰 폭풍이 모여있어요</li>
+<li>가운데 하나, 주변에 7개</li>
+<li>육각형 모양으로 배치돼 있어요</li>
+<li>주노가 사진 찍었어요!</li>
+</ul>
+<p>🌌 <strong>오로라가 엄청 밝아요</strong></p>
+<ul>
+<li>지구 오로라보다 100배 밝아요</li>
+<li>계속 빛나고 있어요</li>
+<li>북극과 남극 둘 다 있어요</li>
+<li>정말 아름다워요!</li>
+</ul>
+<p>🔭 <strong>갈릴레오의 발견</strong></p>
+<ul>
+<li>400년 전 처음 망원경으로 봤어요</li>
+<li>4개의 큰 위성을 발견했어요</li>
+<li>지구가 우주의 중심이 아니라는 증거였어요</li>
+<li>과학 역사의 중요한 순간이에요!</li>
+</ul>
+<p>💨 <strong>바람이 시속 640km예요</strong></p>
+<ul>
+<li>대적점 바람 속도예요</li>
+<li>비행기보다 빨라요!</li>
+<li>태풍보다 훨씬 강해요</li>
+<li>하지만 멈출 땅이 없어서 계속 불어요</li>
+</ul>
+<p>🌟 <strong>거의 별이 될 뻔했어요</strong></p>
+<ul>
+<li>80배만 더 무거웠다면</li>
+<li>별이 됐을 거예요</li>
+<li>그럼 태양계에 태양이 2개!</li>
+<li>하지만 질량이 부족했어요</li>
+</ul>
+<h3 id="재미있는-질문들">재미있는 질문들<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#재미있는-질문들" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Q: 목성에 서면 얼마나 무거워질까요?</strong></p>
+<ul>
+<li>지구보다 2.5배 무거워져요</li>
+<li>30kg 아이는 75kg이 돼요</li>
+<li>걷기가 정말 힘들 거예요</li>
+<li>하지만 서 있을 땅이 없어요!</li>
+</ul>
+<p><strong>Q: 목성에서 하루는 얼마나 짧아요?</strong></p>
+<ul>
+<li>겨우 10시간이에요!</li>
+<li>5시간 낮, 5시간 밤</li>
+<li>학교 갔다 오면 하루가 끝나요</li>
+<li>태양계에서 제일 빠른 자전이에요!</li>
+</ul>
+<p><strong>Q: 목성까지 가는 데 얼마나 걸려요?</strong></p>
+<ul>
+<li>우주선으로 약 13개월~6년</li>
+<li>가는 방법에 따라 달라요</li>
+<li>지구에서 6억~9억 km 떨어져 있어요</li>
+<li>빛의 속도로도 40분 걸려요!</li>
+</ul>
+<p><strong>Q: 목성의 위성은 왜 이렇게 많아요?</strong></p>
+<ul>
+<li>목성이 엄청 크고 무거워요</li>
+<li>중력이 아주 강해요</li>
+<li>지나가는 것들을 붙잡아요</li>
+<li>작은 것까지 합치면 95개예요!</li>
+</ul>
+<p><strong>Q: 대적점은 언제 사라질까요?</strong></p>
+<ul>
+<li>점점 작아지고 있어요</li>
+<li>하지만 아직 수십 년은 남았어요</li>
+<li>정확히는 아무도 몰라요</li>
+<li>과학자들이 계속 관찰하고 있어요!</li>
+</ul>
+<p><strong>Q: 목성에 생명체가 살 수 있나요?</strong></p>
+<ul>
+<li>목성 자체에는 살 수 없어요</li>
+<li>너무 뜨겁고 압력이 세요</li>
+<li>하지만 유로파에는 살 수도 있어요!</li>
+<li>얼음 밑 바다를 탐사할 계획이에요</li>
+</ul>
+<p><strong>Q: 목성의 고리는 왜 안 보여요?</strong></p>
+<ul>
+<li>토성보다 훨씬 희미해요</li>
+<li>먼지가 적고 얇아요</li>
+<li>특별한 장비로만 보여요</li>
+<li>1979년 보이저가 처음 발견했어요!</li>
+</ul>
+<p><strong>Q: 목성에서 지구가 보일까요?</strong></p>
+<ul>
+<li>네! 작은 밝은 점으로 보여요</li>
+<li>달도 함께 보일 거예요</li>
+<li>우주선이 사진도 찍었어요</li>
+<li>아주 멀리 있는 별처럼 보여요</li>
+</ul>
+<h2 id="-아이의-반응추가-질문">🎯 아이의 반응/추가 질문<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-아이의-반응추가-질문" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>(여기에 아이의 반응이나 추가 질문을 기록하세요)</li>
+</ul>
+<hr/>
+<blockquote>
+<p><strong>제텔카스텐 체크리스트</strong>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled/> 1노트 = 1아이디어인가?</li>
+<li class="task-list-item"><input type="checkbox" checked disabled/> 다른 노트 없이도 이해 가능한가?</li>
+<li class="task-list-item"><input type="checkbox" checked disabled/> 최소 1개 다른 노트와 연결했는가?</li>
+<li class="task-list-item"><input type="checkbox" checked disabled/> 연결 이유를 명시했는가?</li>
+</ul>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-23" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#목성" data-for="목성">목성</a></li><li class="depth-1"><a href="#핵심-아이디어-한-문장으로-이해하기" data-for="핵심-아이디어-한-문장으로-이해하기">핵심 아이디어 (한 문장으로 이해하기)</a></li><li class="depth-1"><a href="#자세히-알아보기" data-for="자세히-알아보기">자세히 알아보기</a></li><li class="depth-2"><a href="#목성은-어떤-행성이에요" data-for="목성은-어떤-행성이에요">목성은 어떤 행성이에요?</a></li><li class="depth-2"><a href="#얼마나-클까요" data-for="얼마나-클까요">얼마나 클까요?</a></li><li class="depth-2"><a href="#땅이-없는-행성이에요" data-for="땅이-없는-행성이에요">땅이 없는 행성이에요!</a></li><li class="depth-2"><a href="#큰-빨간-점---거대한-폭풍" data-for="큰-빨간-점---거대한-폭풍">큰 빨간 점 - 거대한 폭풍!</a></li><li class="depth-2"><a href="#빠르게-빙빙-돌아요" data-for="빠르게-빙빙-돌아요">빠르게 빙빙 돌아요!</a></li><li class="depth-2"><a href="#아름다운-줄무늬가-있어요" data-for="아름다운-줄무늬가-있어요">아름다운 줄무늬가 있어요</a></li><li class="depth-2"><a href="#위성이-95개나-있어요" data-for="위성이-95개나-있어요">위성이 95개나 있어요!</a></li><li class="depth-2"><a href="#유로파---생명체가-있을지도" data-for="유로파---생명체가-있을지도">유로파 - 생명체가 있을지도!</a></li><li class="depth-2"><a href="#이오---화산이-폭발하는-위성" data-for="이오---화산이-폭발하는-위성">이오 - 화산이 폭발하는 위성</a></li><li class="depth-2"><a href="#가니메데---제일-큰-위성" data-for="가니메데---제일-큰-위성">가니메데 - 제일 큰 위성</a></li><li class="depth-2"><a href="#목성도-고리가-있어요" data-for="목성도-고리가-있어요">목성도 고리가 있어요!</a></li><li class="depth-2"><a href="#목성의-날씨" data-for="목성의-날씨">목성의 날씨</a></li><li class="depth-2"><a href="#목성의-중력" data-for="목성의-중력">목성의 중력</a></li><li class="depth-2"><a href="#목성-탐사하기" data-for="목성-탐사하기">목성 탐사하기</a></li><li class="depth-2"><a href="#목성과-태양" data-for="목성과-태양">목성과 태양</a></li><li class="depth-2"><a href="#지구에서-목성-보기" data-for="지구에서-목성-보기">지구에서 목성 보기</a></li><li class="depth-2"><a href="#목성의-역사" data-for="목성의-역사">목성의 역사</a></li><li class="depth-1"><a href="#근거--출처" data-for="근거--출처">근거 / 출처</a></li><li class="depth-1"><a href="#-연결-노트" data-for="-연결-노트">🔗 연결 노트</a></li><li class="depth-1"><a href="#-엄마아빠가-설명해줄-때-도움말" data-for="-엄마아빠가-설명해줄-때-도움말">💡 엄마아빠가 설명해줄 때 도움말</a></li><li class="depth-2"><a href="#이렇게-비유해보세요" data-for="이렇게-비유해보세요">이렇게 비유해보세요</a></li><li class="depth-2"><a href="#함께-놀이하기" data-for="함께-놀이하기">함께 놀이하기</a></li><li class="depth-2"><a href="#신기한-사실들" data-for="신기한-사실들">신기한 사실들</a></li><li class="depth-2"><a href="#재미있는-질문들" data-for="재미있는-질문들">재미있는 질문들</a></li><li class="depth-1"><a href="#-아이의-반응추가-질문" data-for="-아이의-반응추가-질문">🎯 아이의 반응/추가 질문</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-2" class="overflow"><li><a href="../../첫째딸-질문노트/우주와-과학/유로파의-지하-바다" class="internal">유로파의 지하 바다</a></li><li><a href="../../첫째딸-질문노트/우주와-과학/천왕성" class="internal">천왕성</a></li><li><a href="../../첫째딸-질문노트/우주와-과학/태양계란" class="internal">태양계란</a></li><li><a href="../../첫째딸-질문노트/우주와-과학/토성" class="internal">토성</a></li><li><a href="../../첫째딸-질문노트/우주와-과학/🗺️-우주와-과학-MOC" class="internal">🗺️ 우주와 과학 MOC</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>
